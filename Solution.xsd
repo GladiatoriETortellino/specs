@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="response">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element name="rsol" type="rsolType">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">Single route solution</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="mtrx" type="mtrxType">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">Solution for N:M routing</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="erro">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">Error</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:attribute name="errt" type="xs:string" use="required">
+              <xs:annotation>
+                <xs:documentation xml:lang="en">Error type</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="errm" type="xs:string" use="optional">
+              <xs:annotation>
+                <xs:documentation xml:lang="en">Error message</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+      <xs:attribute name="reqi" type="xs:integer" use="required">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ID of the request</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="stat" use="required">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Status of the request: solved or error</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="solved">
+              <xs:annotation>
+                <xs:documentation xml:lang="en">The request has been solved</xs:documentation>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="error">
+              <xs:annotation>
+                <xs:documentation xml:lang="en">The request generated an error</xs:documentation>
+              </xs:annotation>
+            </xs:enumeration>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="atim" type="xs:double">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Algorithm time [ms]</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="lang" >
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Language of the solution</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z][A-Z][A-Z]" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Element for single route -->
+  <xs:complexType name="rsolType">
+    <xs:sequence>
+      <xs:element name="orig" type="od_termType">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Origin of the route solution</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="path" type="pathType">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The path starting from the origin</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="tdes" type="xs:integer" use="required">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Time disired, 1 = arrival, 0 = departure</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="tlnk" type="xs:integer" use="required">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">The terminal link code containing the overall route solution performances</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+
+  <!-- Terminal types -->
+  <xs:complexType name="termType">
+    <xs:attribute name="xcoo" type="xs:decimal" use="required">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">X coordianate of the terminal</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="ycoo" type="xs:decimal" use="required">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Y coordianate of the terminal</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="inst" type="xs:dateTime" use="required">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Date and time at the terminal</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="addr" type="xs:string" use="optional">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Address of the terminal</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="od_termType">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Origin and destination terminal</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="termType">
+        <xs:attribute name="prog" use="optional">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">Progressive along the link associated to the terminal</xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+              <xs:pattern value="[0-1]"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="goto_termType">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Terminal for route return; the rest of the trip is described in another path</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="termType">
+        <xs:attribute name="rlin" type="xs:integer" use="optional">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">ID of the return link to continue the route solution</xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="divr_termType">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Terminal for route diversion; the rest of the trip is described by severals other paths</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="od_termType">
+        <xs:sequence>
+          <xs:element name="path" type="pathType" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The paths starting from the diversion terminal</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <!--End terminal types -->
+  <xs:complexType name="pathType">
+    <xs:sequence>
+      <xs:element name="link" type="linkType" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The n-th link of the path</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:choice>
+        <xs:element name="dest" type="od_termType">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">Destination of route solution</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="goto" type="goto_termType">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">Terminal to link to another path</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="divr" type="divr_termType">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">Terminal from which start more paths</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="linkType">
+    <xs:sequence>
+      <xs:element name="actn" type="actnType" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The n-th action associated to the link</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="attr" type="costAttributeType" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The value of the n-th attribute from the origin to the head of the link</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+
+    <xs:attribute name="code" type="xs:integer" use="required">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Absolute ID of the link in the route solution</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="indx" type="xs:integer" use="required">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Progressive index of the link in the path, starting from 1</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="kind" type="linkKind">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">The kind of movement</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="name" type="xs:string" use="optional">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Link name</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="idno" type="xs:integer" use="optional">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">ID of the link in the internal graph</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="fnod" type="xs:integer" use="optional">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">ID of the first node of the link in the internal graph</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="info" type="xs:string" use="optional">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Additional information</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="inst" type="xs:dateTime" use="optional">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Date and time at the end of the link</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="time" type="xs:decimal" use="optional">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">
+          Travelled time in seconds, from the origin to the head of the link
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="cost" type="xs:decimal" use="optional">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">
+          Travelled cost in €, from the origin to the head of the link
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="dist" type="xs:decimal" use="optional">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">
+          Travelled distance in meters, from the origin to the head of the link
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:simpleType name="linkKind">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="driv">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Driving a private veheicle on a road</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ride">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Travelling on board a transit line</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="walk">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Walking along a pedestrian road</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="aceg">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Accessing to or egressing from a transport network</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="actnType">
+
+    <xs:attribute name="indx" type="xs:integer" use="required">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Progressive index of the action in the link, starting from 1</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="xcoo" type="xs:decimal" use="required">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">X coordinate of the point associated to the action</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="ycoo" type="xs:decimal" use="required">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Y coordinate of the point associated to the action</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="kind" type="xs:string" use="optional">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Kind of action interpreted by the client to generate a message</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="dir" use="optional" type="xs:string">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Directional movement; information to be used by the client interpreter together with kind attribute</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="addr" type="xs:string" use="optional">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Address; information to be used by the client interpreter together with kind attribute</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="ernd" type="xs:integer" use="optional">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Progressive index of the roundabout exit, starting from 1</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="actc" use="optional" >
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Action code</xs:documentation>
+      </xs:annotation>
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="Start"/>
+          <xs:enumeration value="KeepStraight"/>
+          <xs:enumeration value="TurnLeft"/>
+          <xs:enumeration value="TurnSightlyLeft"/>
+          <xs:enumeration value="TurnRight"/>
+          <xs:enumeration value="TurnSightlyRight"/>
+          <xs:enumeration value="EnterRoundabout"/>
+          <xs:enumeration value="ExitRoundabout"/>
+          <xs:enumeration value="Arrival"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+
+  </xs:complexType>
+
+  <xs:complexType name="costAttributeType">
+    <xs:attribute name="code" type="xs:string">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">The code of the cost attribute (matching a coefficient code)</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="valu" type="xs:decimal">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">
+          Total custom attribute value of the cost attribute
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <!--End element for single route -->
+
+  <!-- Element for N:N routing -->
+  <xs:complexType name="mtrxType">
+    <xs:sequence>
+      <xs:element name="OD_p" type="OD_pType" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Properties of a specific route</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="OD_pType">
+
+    <xs:sequence>
+      <xs:element name="attr" type="costAttributeType" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The value of the n-th attribute</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+
+    <xs:attribute name="orig" type="xs:string" use="required">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Origin ID according to the request</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="oxco" type="xs:decimal" use="optional">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">X coordinate of the origin</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="oyco" type="xs:decimal" use="optional">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Y coordinate of the origin</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="dest" type="xs:string" use="required">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Destination ID according to the request</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="dxco" type="xs:decimal" use="optional">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">X coordinate of the destination</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="dyco" type="xs:decimal" use="optional">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Y coordinate of the destination</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="inst" type="xs:dateTime" use="optional">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">
+          Date and time in the origin or destination according to tdes value.
+          If tdes = 0 (search from origin) is the date at the destination, otherwise is the date in the origin.
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="time" type="xs:decimal" use="optional">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Travelled time in seconds</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="cost" type="xs:decimal" use="optional">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Travelled cost in €</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="dist" type="xs:decimal" use="optional">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Travelled distance in meters</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+
+  </xs:complexType>
+  <!-- End element for N:N routing -->
+
+</xs:schema>
