@@ -4,8 +4,45 @@ Paths:
 Risorsa: offer
 --------------
 
+create new offer
 POST 
 /offers
+
+request
+{
+	"idUtente":"<cell-number>",
+	"userName":<user-name>,
+	"pathRequest":[
+	{
+		"name":"<title>",
+		"lat":"<lat>",
+		"long":"<long>"
+	}
+	..
+	]
+	"vehicleType":"<vehicleType>",
+	"places":"<numberOfPlaces>",
+	"requestTime":"<DateTimeStamp>",
+	"startOrEnd":"<true|false>",
+	"maxThreshold":"<numberOfSeconds>"
+}
+
+response
+{
+	"idOffer":"<id-DB>",
+	"idUtente":"<cell-number>",
+	"pathResponse":[]
+}
+
+Note:
+- inizialmente il path e' un array con due oggetti: origine e destinazione
+- quando mi arriva la notifica push, avro' una richiesta con una lista di oggetti "tappe"
+- dopo la notifica push l'orgine e' aggiornata alla nuova posizione corrente
+
+
+update offer
+POST 
+/offers/<id-offer>
 
 request
 {
@@ -29,13 +66,8 @@ response
 {
 	"idOffer":"<id-DB>",
 	"idUtente":"<cell-number>",
-	"pathResponse": (json version di Response XML)
+	"pathResponse": "<link-routing>"
 }
-
-Note:
-- inizialmente il path e' un array con due oggetti: origine e destinazione
-- quando mi arriva la notifica push, avro' una richiesta con una lista di oggetti "tappe"
-- dopo la notifica push l'orgine e' aggiornata alla nuova posizione corrente
 
 
 GET
@@ -59,6 +91,7 @@ request
 {
 	"idUtente":"<cell-number>",
 	"userName":<user-name>,
+	"numberOfPerson":"<number>",
 	"pathRequest":[
 	{
 		"name":"<title>",
