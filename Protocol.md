@@ -31,16 +31,15 @@ response
 {
 	"idOffer":"<id-DB>",
 	"idUtente":"<cell-number>",
-	"pathResponse":[]
+	"pathResponse":"<link-routing>"
 }
 
 Note:
 - inizialmente il path e' un array con due oggetti: origine e destinazione
 - quando mi arriva la notifica push, avro' una richiesta con una lista di oggetti "tappe"
-- dopo la notifica push l'orgine e' aggiornata alla nuova posizione corrente
 
 
-update offer
+update offer (quella che arriva dalla push notification)
 POST 
 /offers/<id-offer>
 
@@ -68,6 +67,18 @@ response
 	"idUtente":"<cell-number>",
 	"pathResponse": "<link-routing>"
 }
+
+Note:
+- dopo la notifica push l'orgine e' aggiornata alla nuova posizione corrente
+
+take offer
+POST 
+/offers/<id-offer>/join
+
+Note:
+- cristallizza l'offerta
+- (comporta che abbasso il numero di persone disponibili )
+- scatena PUSH NOTIFICATION con link al quale andare
 
 
 GET
