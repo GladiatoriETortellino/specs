@@ -1,0 +1,260 @@
+<response reqi="4" stat="solved" lang="ITA">
+	<rsol tdes="0">
+		<orig xcoo="12.53748" ycoo="41.89668" inst="2012-09-24T18:09:00" addr="12.53748, 41.89668" prog="0.562501295090906"/>
+		<path indx="1">
+			<link code="1" indx="1" kind="driv" inst="2012-09-24T18:09:03" time="3.39722892100145" dist="28.3102410083454" cost="0.0188734940055636" voft="0.000943674700278179" vofd="0.0283102410083454" lev1="0" lev2="0" lev3="0" lev4="0" lev5="0" tort="0" uslo="0" dslo="0" rtrn="0" ltrn="0" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="0" npav="0" toll="0" cont="0" prio="0">
+				<actn indx="1" xcoo="12.5377" ycoo="41.89688" actc="Start" dir="Ovest" addr="VIA ANTONIO BALDISSERA" kind="Procedi in direzione {dir} lungo {street}"/>
+			</link>
+			<link code="2" indx="2" name="VIA ANTONIO BALDISSERA" idno="55529565" fnod="120411" kind="driv" inst="2012-09-24T18:09:09" time="9.8111534635249" dist="71.0697379585017" cost="0.0545064081306939" voft="0.00272532040653469" vofd="0.0710697379585017" lev1="0" lev2="0" lev3="0" lev4="0" lev5="0.0427594969501564" tort="0" uslo="0" dslo="0.043749872342705" rtrn="0" ltrn="0" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="0.0428748719597821" npav="0" toll="0" cont="0" prio="0">
+				<actn indx="1" xcoo="12.5373" ycoo="41.89712" actc="TurnRight" addr="VIA BALDASSARRE ORERO" kind="Svolta a destra e imbocca {street}"/>
+			</link>
+			<link code="3" indx="3" name="VIA BALDASSARRE ORERO" idno="55529448" fnod="90306" kind="driv" inst="2012-09-24T18:09:18" time="18.5126337567988" dist="129.079606580328" cost="0.102847965315549" voft="0.00514239826577745" vofd="0.129079606580328" lev1="0" lev2="0" lev3="0" lev4="0" lev5="0.100769365571983" tort="0.260466933250427" uslo="0" dslo="0.043749872342705" rtrn="0.260466933250427" ltrn="0" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="0.100874870290852" npav="0" toll="0" cont="0" prio="0">
+				<actn indx="1" xcoo="12.5373001098633" ycoo="41.8971214294434"/>
+				<actn indx="2" xcoo="12.53778" ycoo="41.8975"/>
+			</link>
+			<link code="4" indx="4" name="VIA BALDASSARRE ORERO" idno="55529316" fnod="29673" kind="driv" inst="2012-09-24T18:09:28" time="28.7811243573848" dist="197.536210584234" cost="0.159895135318804" voft="0.00799475676594021" vofd="0.197536210584234" lev1="0" lev2="0" lev3="0" lev4="0" lev5="0.169225969575889" tort="0.265493410173804" uslo="0" dslo="0.143749871215354" rtrn="0.260466933250427" ltrn="0.00502647692337632" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="0.16887487398634" npav="0" toll="0" cont="0" prio="0">
+				<actn indx="1" xcoo="12.5377798080444" ycoo="41.8974990844727"/>
+				<actn indx="2" xcoo="12.53833" ycoo="41.89796"/>
+			</link>
+			<link code="5" indx="5" name="VIA BALDASSARRE ORERO" idno="55529179" fnod="76800" kind="driv" inst="2012-09-24T18:09:37" time="37.18996892373" dist="253.595174359869" cost="0.206610938465167" voft="0.0103305469232583" vofd="0.253595174359869" lev1="0" lev2="0" lev3="0" lev4="0" lev5="0.225284933351524" tort="0.268754329998046" uslo="0.0999999981047135" dslo="0.143749871215354" rtrn="0.26372785307467" ltrn="0.00502647692337632" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="0.224874875714875" npav="0" toll="0" cont="0" prio="0">
+				<actn indx="1" xcoo="12.538330078125" ycoo="41.8979606628418"/>
+				<actn indx="2" xcoo="12.53879" ycoo="41.89833" addr=""/>
+			</link>
+			<link code="6" indx="6" name="" idno="55577717" fnod="113676" kind="driv" inst="2012-09-24T18:09:39" time="39.8407616178218" dist="271.267125653814" cost="0.221337564543454" voft="0.0110668782271727" vofd="0.271267125653814" lev1="0" lev2="0" lev3="0" lev4="0" lev5="0.242956884645469" tort="0.27245806902647" uslo="0.0999999981047135" dslo="0.143749871215354" rtrn="0.26372785307467" ltrn="0.00873021595180035" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="0.242874874940014" npav="0" toll="0" cont="0" prio="0">
+				<actn indx="1" xcoo="12.5387897491455" ycoo="41.8983306884766"/>
+				<actn indx="2" xcoo="12.53893" ycoo="41.89845" actc="TurnLeft" addr="VIA DI PORTONACCIO" kind="Svolta a sinistra e imbocca {street}"/>
+			</link>
+			<link code="7" indx="7" name="VIA DI PORTONACCIO" idno="55577716" fnod="26280" kind="driv" inst="2012-09-24T18:09:45" time="45.7729319135371" dist="310.81492762525" cost="0.254294066186317" voft="0.0127147033093159" vofd="0.31081492762525" lev1="0" lev2="0" lev3="0" lev4="0.0395478019714355" lev5="0.242956884645469" tort="0.512822456657887" uslo="0.0999999981047135" dslo="0.143749871215354" rtrn="0.26372785307467" ltrn="0.249094603583217" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="0.282874874045945" npav="0" toll="0" cont="0" prio="0">
+				<actn indx="1" xcoo="12.53892993927" ycoo="41.8984489440918"/>
+				<actn indx="2" xcoo="12.53859" ycoo="41.8987" actc="TurnRight" addr="VIA CASTELGUIDONE" kind="Svolta a destra e imbocca {street}"/>
+			</link>
+			<link code="8" indx="8" name="VIA CASTELGUIDONE" idno="55528885" fnod="39815" kind="driv" inst="2012-09-24T18:09:56" time="56.7723120252314" dist="384.144128369879" cost="0.315401733473508" voft="0.0157700866736754" vofd="0.384144128369879" lev1="0" lev2="0" lev3="0" lev4="0.112877002716064" lev5="0.242956884645469" tort="0.836545564234257" uslo="0.50000001301708" dslo="0.143749871215354" rtrn="0.58745096065104" ltrn="0.249094603583217" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="0.355874872973061" npav="0" toll="0" cont="0" prio="0">
+				<actn indx="1" xcoo="12.5385904312134" ycoo="41.8987007141113"/>
+				<actn indx="2" xcoo="12.53943" ycoo="41.89891" actc="KeepStraight" addr="" kind="Prosegui dritto sulla rampa"/>
+			</link>
+			<link code="9" indx="9" name="" idno="762521419" fnod="106935" kind="driv" inst="2012-09-24T18:09:57" time="57.4779978553477" dist="388.848700570654" cost="0.319322210307487" voft="0.0159661105153744" vofd="0.388848700570654" lev1="0" lev2="0" lev3="0" lev4="0.11758157491684" lev5="0.242956884645469" tort="0.85965177975595" uslo="0.50000001301708" dslo="0.143749871215354" rtrn="0.58745096065104" ltrn="0.27220081910491" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="0.360874872861302" npav="0" toll="0" cont="0" prio="0">
+				<actn indx="1" xcoo="12.5394296646118" ycoo="41.8989105224609"/>
+				<actn indx="2" xcoo="12.53948" ycoo="41.89893"/>
+			</link>
+			<link code="10" indx="10" name="" idno="762521420" fnod="9033" kind="driv" inst="2012-09-24T18:10:16" time="76.3842932502452" dist="514.89066986997" cost="0.424357184723584" voft="0.0212178592361792" vofd="0.51489066986997" lev1="0" lev2="0" lev3="0" lev4="0.243623544216156" lev5="0.242956884645469" tort="0.859904060169356" uslo="0.50000001301708" dslo="0.143749871215354" rtrn="0.587703241064446" ltrn="0.27220081910491" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="0.48687487488786" npav="0" toll="0" cont="0" prio="0">
+				<actn indx="1" xcoo="12.5394802093506" ycoo="41.8989295959473"/>
+				<actn indx="2" xcoo="12.54084" ycoo="41.89944" actc="KeepStraight" addr="A24" kind="Prosegui dritto su {street}"/>
+			</link>
+			<link code="11" indx="11" name="A24" idno="71119288" fnod="32988" kind="driv" inst="2012-09-24T18:10:22" time="82.0498114387217" dist="628.201033639501" cost="0.455832285770676" voft="0.0227916142885338" vofd="0.628201033639502" lev1="0" lev2="0.113310363769531" lev3="0" lev4="0.243623544216156" lev5="0.242956884645469" tort="0.901774606696563" uslo="1.10000001005838" dslo="0.143749871215354" rtrn="0.619995178683894" ltrn="0.27220081910491" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="0.599874872920907" npav="0" toll="0" cont="0.112999998033047" prio="0">
+				<actn indx="1" xcoo="12.5408401489258" ycoo="41.8994407653809"/>
+				<actn indx="2" xcoo="12.54157992" ycoo="41.8995900411273"/>
+				<actn indx="3" xcoo="12.54217" ycoo="41.89968"/>
+			</link>
+			<link code="12" indx="12" name="A24" idno="75109345" fnod="46473" kind="driv" inst="2012-09-24T18:10:31" time="91.9806769172374" dist="826.818343209814" cost="0.511003760651319" voft="0.0255501880325659" vofd="0.826818343209814" lev1="0" lev2="0.311927673339844" lev3="0" lev4="0.243623544216156" lev5="0.242956884645469" tort="0.925587715610163" uslo="1.50000001140409" dslo="0.143749871215354" rtrn="0.637751482456224" ltrn="0.27220081910491" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="0.798874873874581" npav="0" toll="0" cont="0.311999998986721" prio="0">
+				<actn indx="1" xcoo="12.5421695709229" ycoo="41.8996810913086"/>
+				<actn indx="2" xcoo="12.54273012" ycoo="41.8997200011274"/>
+				<actn indx="3" xcoo="12.54359988" ycoo="41.8997700411274"/>
+				<actn indx="4" xcoo="12.54456" ycoo="41.89984"/>
+			</link>
+			<link code="13" indx="13" name="A24" idno="75109344" fnod="117910" kind="driv" inst="2012-09-24T18:10:42" time="102.80754905328" dist="1139.59464936216" cost="0.571153050296" voft="0.0285576525148" vofd="1.13959464936216" lev1="0" lev2="0.624703979492187" lev3="0" lev4="0.243623544216156" lev5="0.242956884645469" tort="0.968639809667366" uslo="1.50000001140409" dslo="0.243749872895902" rtrn="0.637751482456224" ltrn="0.281621476635337" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="1.11187486743728" npav="0" toll="0" cont="0.624999992549419" prio="0">
+				<actn indx="1" xcoo="12.5445604324341" ycoo="41.8998413085938"/>
+				<actn indx="2" xcoo="12.54539016" ycoo="41.8999400511275"/>
+				<actn indx="3" xcoo="12.54571992" ycoo="41.8999900011275"/>
+				<actn indx="4" xcoo="12.54606984" ycoo="41.9000500311275"/>
+				<actn indx="5" xcoo="12.54633984" ycoo="41.9001000711276"/>
+				<actn indx="6" xcoo="12.54701016" ycoo="41.9002600011277"/>
+				<actn indx="7" xcoo="12.54756996" ycoo="41.9004100311277"/>
+				<actn indx="8" xcoo="12.54819" ycoo="41.90059"/>
+			</link>
+			<link code="14" indx="14" name="A24" idno="58997626" fnod="93689" kind="driv" inst="2012-09-24T18:10:44" time="104.194801684834" dist="1179.67083649595" cost="0.57886000936019" voft="0.0289430004680095" vofd="1.17967083649595" lev1="0" lev2="0.664780166625977" lev3="0" lev4="0.243623544216156" lev5="0.242956884645469" tort="0.979218494176166" uslo="1.50000001140409" dslo="0.34374987320243" rtrn="0.637751482456224" ltrn="0.292200161144137" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="1.15187486654321" npav="0" toll="0" cont="0.66499999165535" prio="0">
+				<actn indx="1" xcoo="12.5481901168823" ycoo="41.9005889892578"/>
+				<actn indx="2" xcoo="12.54863" ycoo="41.90074"/>
+			</link>
+			<link code="15" indx="15" name="A24" idno="58997627" fnod="46479" kind="driv" inst="2012-09-24T18:10:50" time="110.51471493275" dist="1362.24610810239" cost="0.613970638515276" voft="0.0306985319257638" vofd="1.36224610810239" lev1="0" lev2="0.847355438232422" lev3="0" lev4="0.243623544216156" lev5="0.242956884645469" tort="0.982857304654317" uslo="1.50000001140409" dslo="0.643749883856295" rtrn="0.641390292934375" ltrn="0.292200161144137" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="1.33487486487428" npav="0" toll="0" cont="0.84799998998642" prio="0">
+				<actn indx="1" xcoo="12.5486297607422" ycoo="41.9007415771484"/>
+				<actn indx="2" xcoo="12.55065" ycoo="41.9014"/>
+			</link>
+			<link code="16" indx="16" name="A24" idno="55528162" fnod="83589" kind="driv" inst="2012-09-24T18:10:59" time="119.867847210018" dist="1632.44770722349" cost="0.665932484500102" voft="0.0332966242250051" vofd="1.63244770722349" lev1="0" lev2="1.11755703735352" lev3="0" lev4="0.243623544216156" lev5="0.242956884645469" tort="1.01166259174352" uslo="1.50000001140409" dslo="0.843749881910649" rtrn="0.645764230313944" ltrn="0.292200161144137" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="1.60487487560312" npav="0" toll="0" cont="1.11800000071526" prio="0">
+				<actn indx="1" xcoo="12.5506505966187" ycoo="41.9014015197754"/>
+				<actn indx="2" xcoo="12.55133988" ycoo="41.9016100011283"/>
+				<actn indx="3" xcoo="12.55205016" ycoo="41.9018100711284"/>
+				<actn indx="4" xcoo="12.55251996" ycoo="41.9019300411284"/>
+				<actn indx="5" xcoo="12.55276008" ycoo="41.9019900711285"/>
+				<actn indx="6" xcoo="12.55311" ycoo="41.9020600011285"/>
+				<actn indx="7" xcoo="12.55373" ycoo="41.9022" actc="KeepStraight" addr="" kind="Prosegui dritto sulla rampa"/>
+			</link>
+			<link code="17" indx="17" name="" idno="55527884" fnod="87055" kind="driv" inst="2012-09-24T18:11:25" time="145.178386150448" dist="1913.6759176727" cost="0.806546589724711" voft="0.0403273294862356" vofd="1.9136759176727" lev1="0" lev2="1.11755703735352" lev3="0.281228210449219" lev4="0.243623544216156" lev5="0.242956884645469" tort="1.23003486220841" uslo="1.50000001140409" dslo="1.44374989449669" rtrn="0.677282093587564" ltrn="0.292200161144137" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="1.88587486392061" npav="0" toll="0" cont="1.11800000071526" prio="0">
+				<actn indx="1" xcoo="12.5537300109863" ycoo="41.9021987915039"/>
+				<actn indx="2" xcoo="12.55446" ycoo="41.9022500811286"/>
+				<actn indx="3" xcoo="12.55496004" ycoo="41.9023200111286"/>
+				<actn indx="4" xcoo="12.55560984" ycoo="41.9024300811287"/>
+				<actn indx="5" xcoo="12.55662" ycoo="41.9026000011288"/>
+				<actn indx="6" xcoo="12.55671" ycoo="41.9026100811288"/>
+				<actn indx="7" xcoo="12.55686012" ycoo="41.9025700311287"/>
+				<actn indx="8" xcoo="12.557" ycoo="41.90246" actc="TurnSightlyRight" addr="VIA GIUSEPPE ANTONIO ANDRIULLI" kind="Svolta leggermente a destra e imbocca {street}"/>
+			</link>
+			<link code="18" indx="18" name="VIA GIUSEPPE ANTONIO ANDRIULLI" idno="55538642" fnod="83637" kind="driv" inst="2012-09-24T18:11:31" time="151.295004421322" dist="1981.63834290464" cost="0.840527802340678" voft="0.0420263901170339" vofd="1.98163834290464" lev1="0" lev2="1.11755703735352" lev3="0.349190635681152" lev4="0.243623544216156" lev5="0.242956884645469" tort="1.34623039377038" uslo="1.60000001453924" dslo="1.44374989449669" rtrn="0.776364369812654" ltrn="0.292200161144137" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="1.95387486761609" npav="0" toll="0" cont="1.11800000071526" prio="0.068000003695488">
+				<actn indx="1" xcoo="12.5570001602173" ycoo="41.902458190918"/>
+				<actn indx="2" xcoo="12.55704984" ycoo="41.9021700711286"/>
+				<actn indx="3" xcoo="12.55715" ycoo="41.90186" addr=""/>
+			</link>
+			<link code="19" indx="19" name="" idno="55528102" fnod="90371" kind="driv" inst="2012-09-24T18:12:12" time="192.650694211124" dist="2038.194613504" cost="1.07028163450624" voft="0.0535140817253122" vofd="2.038194613504" lev1="0" lev2="1.11755703735352" lev3="0.405746906280518" lev4="0.243623544216156" lev5="0.242956884645469" tort="1.66737399858539" uslo="1.60000001453924" dslo="1.44374989449669" rtrn="0.776364369812654" ltrn="0.393135463818908" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="2.0108748676459" npav="0" toll="0" cont="1.11800000071526" prio="0.068000003695488">
+				<actn indx="1" xcoo="12.557149887085" ycoo="41.9018592834473"/>
+				<actn indx="2" xcoo="12.55726008" ycoo="41.9017900011284"/>
+				<actn indx="3" xcoo="12.55739004" ycoo="41.9017500411284"/>
+				<actn indx="4" xcoo="12.55753008" ycoo="41.9017600311284"/>
+				<actn indx="5" xcoo="12.55763988" ycoo="41.9018100711284"/>
+				<actn indx="6" xcoo="12.55774" ycoo="41.90187" actc="TurnSightlyLeft" addr="VIA GIUSEPPE ANTONIO ANDRIULLI" kind="Svolta leggermente a sinistra e imbocca {street}"/>
+			</link>
+			<link code="20" indx="20" name="VIA GIUSEPPE ANTONIO ANDRIULLI" idno="55538641" fnod="113744" kind="driv" inst="2012-09-24T18:12:19" time="199.875309765933" dist="2118.46811966855" cost="1.11041838758852" voft="0.055520919379426" vofd="2.11846811966855" lev1="0" lev2="1.11755703735352" lev3="0.486020412445068" lev4="0.243623544216156" lev5="0.242956884645469" tort="1.79874205592205" uslo="1.60000001453924" dslo="1.54374989311926" rtrn="0.776364369812654" ltrn="0.521853199228644" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="2.09087486585776" npav="0" toll="0" cont="1.11800000071526" prio="0.148000001907349">
+				<actn indx="1" xcoo="12.5577402114868" ycoo="41.9018707275391"/>
+				<actn indx="2" xcoo="12.55777992" ycoo="41.9022400011286"/>
+				<actn indx="3" xcoo="12.55781" ycoo="41.90259"/>
+			</link>
+			<link code="21" indx="21" name="VIA GIUSEPPE ANTONIO ANDRIULLI" idno="55538644" fnod="103635" kind="driv" inst="2012-09-24T18:12:23" time="203.09217599213" dist="2154.2110777374" cost="1.12828986662294" voft="0.0564144933311471" vofd="2.1542110777374" lev1="0" lev2="1.11755703735352" lev3="0.521763370513916" lev4="0.243623544216156" lev5="0.242956884645469" tort="1.82374375875224" uslo="1.60000001453924" dslo="1.54374989311926" rtrn="0.776364369812654" ltrn="0.54685490205884" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="2.12687486430804" npav="0" toll="0" cont="1.11800000071526" prio="0.184000000357628">
+				<actn indx="1" xcoo="12.5578098297119" ycoo="41.9025917053223"/>
+				<actn indx="2" xcoo="12.55777" ycoo="41.90291"/>
+			</link>
+			<link code="22" indx="22" name="VIA GIUSEPPE ANTONIO ANDRIULLI" idno="55527671" fnod="36560" kind="driv" inst="2012-09-24T18:12:24" time="204.202643139957" dist="2166.54960160215" cost="1.13445912855532" voft="0.0567229564277658" vofd="2.16654960160215" lev1="0" lev2="1.11755703735352" lev3="0.534101894378662" lev4="0.243623544216156" lev5="0.242956884645469" tort="1.8301186231256" uslo="1.60000001453924" dslo="1.54374989311926" rtrn="0.776364369812654" ltrn="0.553229766432196" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="2.13887486441234" npav="0" toll="0" cont="1.11800000071526" prio="0.196000000461936">
+				<actn indx="1" xcoo="12.5577697753906" ycoo="41.9029083251953"/>
+				<actn indx="2" xcoo="12.55775" ycoo="41.90302"/>
+			</link>
+			<link code="23" indx="23" name="VIA GIUSEPPE ANTONIO ANDRIULLI" idno="55538639" fnod="63416" kind="driv" inst="2012-09-24T18:12:29" time="209.471492817996" dist="2225.09237580259" cost="1.16373051565554" voft="0.0581865257827768" vofd="2.22509237580259" lev1="0" lev2="1.11755703735352" lev3="0.592644668579102" lev4="0.243623544216156" lev5="0.242956884645469" tort="1.83517382657737" uslo="1.70000001651152" dslo="1.54374989311926" rtrn="0.776364369812654" ltrn="0.554034575237893" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="2.19787486476997" npav="0" toll="0" cont="1.11800000071526" prio="0.255000000819564">
+				<actn indx="1" xcoo="12.55774974823" ycoo="41.903018951416"/>
+				<actn indx="2" xcoo="12.55771008" ycoo="41.9032300011291"/>
+				<actn indx="3" xcoo="12.55764" ycoo="41.90354"/>
+			</link>
+			<link code="24" indx="24" name="VIA GIUSEPPE ANTONIO ANDRIULLI" idno="55538638" fnod="26371" kind="driv" inst="2012-09-24T18:12:33" time="213.458907483219" dist="2269.39698319394" cost="1.18588281935121" voft="0.0592941409675607" vofd="2.26939698319394" lev1="0" lev2="1.11755703735352" lev3="0.636949275970459" lev4="0.243623544216156" lev5="0.242956884645469" tort="1.84171332084225" uslo="1.70000001651152" dslo="1.54374989311926" rtrn="0.776364369812654" ltrn="0.560574069502763" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="2.24187486453155" npav="0" toll="0" cont="1.11800000071526" prio="0.299000000581145">
+				<actn indx="1" xcoo="12.5576400756836" ycoo="41.9035415649414"/>
+				<actn indx="2" xcoo="12.55753" ycoo="41.90393"/>
+			</link>
+			<link code="25" indx="25" name="VIA GIUSEPPE ANTONIO ANDRIULLI" idno="779331468" fnod="63417" kind="driv" inst="2012-09-24T18:12:38" time="218.888211061187" dist="2353.852816629" cost="1.21604561700659" voft="0.0608022808503296" vofd="2.353852816629" lev1="0" lev2="1.11755703735352" lev3="0.721405109405518" lev4="0.243623544216156" lev5="0.242956884645469" tort="1.87912318427698" uslo="1.70000001651152" dslo="1.54374989311926" rtrn="0.789445120404707" ltrn="0.560574069502763" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="2.32587486339906" npav="0" toll="0" cont="1.11800000071526" prio="0.382999999448657">
+				<actn indx="1" xcoo="12.5575304031372" ycoo="41.9039306640625"/>
+				<actn indx="2" xcoo="12.55749012" ycoo="41.9041700511295"/>
+				<actn indx="3" xcoo="12.55740984" ycoo="41.9044100811296"/>
+				<actn indx="4" xcoo="12.55731" ycoo="41.90467"/>
+			</link>
+			<link code="26" indx="26" name="VIA GIUSEPPE ANTONIO ANDRIULLI" idno="779331469" fnod="9365" kind="driv" inst="2012-09-24T18:12:42" time="222.816093855158" dist="2414.95321564634" cost="1.23786718808421" voft="0.0618933594042106" vofd="2.41495321564634" lev1="0" lev2="1.11755703735352" lev3="0.782505508422852" lev4="0.243623544216156" lev5="0.242956884645469" tort="1.92093550026766" uslo="1.70000001651152" dslo="1.54374989311926" rtrn="0.790034748584731" ltrn="0.560574069502763" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="2.38687486408452" npav="0" toll="0" cont="1.11800000071526" prio="0.44400000013411">
+				<actn indx="1" xcoo="12.5573101043701" ycoo="41.904670715332"/>
+				<actn indx="2" xcoo="12.55725" ycoo="41.9048300211298"/>
+				<actn indx="3" xcoo="12.55717008" ycoo="41.9050300011299"/>
+				<actn indx="4" xcoo="12.55705" ycoo="41.90518"/>
+			</link>
+			<link code="27" indx="27" name="VIA GIUSEPPE ANTONIO ANDRIULLI" idno="55577862" fnod="90372" kind="driv" inst="2012-09-24T18:12:49" time="229.830073347346" dist="2492.88632111509" cost="1.27683374081859" voft="0.0638416870409293" vofd="2.49288632111509" lev1="0" lev2="1.11755703735352" lev3="0.860438613891602" lev4="0.243623544216156" lev5="0.242956884645469" tort="1.98442041952512" uslo="1.80000001684907" dslo="1.54374989311926" rtrn="0.838623009592993" ltrn="0.560574069502763" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="2.46487486569384" npav="0" toll="0" cont="1.11800000071526" prio="0.522000001743436">
+				<actn indx="1" xcoo="12.5570497512817" ycoo="41.9051818847656"/>
+				<actn indx="2" xcoo="12.55700988" ycoo="41.90531008113"/>
+				<actn indx="3" xcoo="12.55695984" ycoo="41.9054800011301"/>
+				<actn indx="4" xcoo="12.55689" ycoo="41.90587"/>
+			</link>
+			<link code="28" indx="28" name="VIA GIUSEPPE ANTONIO ANDRIULLI" idno="55526814" fnod="107016" kind="driv" inst="2012-09-24T18:12:53" time="233.481634931818" dist="2533.45922760923" cost="1.29712019406566" voft="0.0648560097032828" vofd="2.53345922760923" lev1="0" lev2="1.11755703735352" lev3="0.901011520385742" lev4="0.243623544216156" lev5="0.242956884645469" tort="1.98876220718375" uslo="1.80000001684907" dslo="1.84374989327765" rtrn="0.838623009592993" ltrn="0.564915857161395" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="2.50587486682633" npav="0" toll="0" cont="1.11800000071526" prio="0.563000002875924">
+				<actn indx="1" xcoo="12.5568895339966" ycoo="41.9058685302734"/>
+				<actn indx="2" xcoo="12.55681" ycoo="41.90623" actc="KeepStraight" addr="VIA FILIPPO FIORENTINI" kind="Prosegui dritto su {street}"/>
+			</link>
+			<link code="29" indx="29" name="VIA FILIPPO FIORENTINI" idno="55538449" fnod="49940" kind="driv" inst="2012-09-24T18:12:57" time="237.737329206721" dist="2580.74471955259" cost="1.32076294003734" voft="0.0660381470018668" vofd="2.58074471955259" lev1="0" lev2="1.11755703735352" lev3="0.948297012329102" lev4="0.243623544216156" lev5="0.242956884645469" tort="1.98905217277934" uslo="2.1000000276627" dslo="1.84374989327765" rtrn="0.838912975188578" ltrn="0.564915857161395" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="2.55287486521701" npav="0" toll="0" cont="1.11800000071526" prio="0.610000001266599">
+				<actn indx="1" xcoo="12.5568103790283" ycoo="41.9062309265137"/>
+				<actn indx="2" xcoo="12.55672" ycoo="41.90665"/>
+			</link>
+			<link code="30" indx="30" name="VIA FILIPPO FIORENTINI" idno="779323467" fnod="56691" kind="driv" inst="2012-09-24T18:13:02" time="242.73613768603" dist="2636.28703598936" cost="1.34853409825572" voft="0.067426704912786" vofd="2.63628703598935" lev1="0" lev2="1.11755703735352" lev3="1.00383932876587" lev4="0.243623544216156" lev5="0.242956884645469" tort="1.99475720201735" uslo="2.1000000276627" dslo="1.84374989327765" rtrn="0.838912975188578" ltrn="0.570620886399411" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="2.60887486694554" npav="0" toll="0" cont="1.11800000071526" prio="0.666000002995133">
+				<actn indx="1" xcoo="12.5567197799683" ycoo="41.9066505432129"/>
+				<actn indx="2" xcoo="12.55659" ycoo="41.90714"/>
+			</link>
+			<link code="31" indx="31" name="VIA FILIPPO FIORENTINI" idno="779323468" fnod="9352" kind="driv" inst="2012-09-24T18:13:18" time="258.722331381098" dist="2813.911410379" cost="1.43734628545054" voft="0.0718673142725272" vofd="2.813911410379" lev1="0" lev2="1.11755703735352" lev3="1.18146370315552" lev4="0.243623544216156" lev5="0.242956884645469" tort="2.01436404246488" uslo="2.1000000276627" dslo="1.84374989327765" rtrn="0.838912975188578" ltrn="0.571629736572504" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="2.78687487004498" npav="0" toll="0" cont="1.11800000071526" prio="0.844000006094575">
+				<actn indx="1" xcoo="12.5565900802612" ycoo="41.9071388244629"/>
+				<actn indx="2" xcoo="12.55647996" ycoo="41.9075400111311"/>
+				<actn indx="3" xcoo="12.55638996" ycoo="41.9078400711312"/>
+				<actn indx="4" xcoo="12.55629996" ycoo="41.9080600311313"/>
+				<actn indx="5" xcoo="12.55615992" ycoo="41.9083800711315"/>
+				<actn indx="6" xcoo="12.55603" ycoo="41.90868"/>
+			</link>
+			<link code="32" indx="32" name="VIA FILIPPO FIORENTINI" idno="55525935" fnod="60023" kind="driv" inst="2012-09-24T18:13:21" time="261.312116537348" dist="2842.686801004" cost="1.45173398076304" voft="0.0725866990381522" vofd="2.842686801004" lev1="0" lev2="1.11755703735352" lev3="1.21023909378052" lev4="0.243623544216156" lev5="0.242956884645469" tort="2.02601177818724" uslo="2.1000000276627" dslo="1.84374989327765" rtrn="0.838912975188578" ltrn="0.583277472294867" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="2.81587486921052" npav="0" toll="0" cont="1.11800000071526" prio="0.87300000526011">
+				<actn indx="1" xcoo="12.5560302734375" ycoo="41.9086799621582"/>
+				<actn indx="2" xcoo="12.5559" ycoo="41.90892"/>
+			</link>
+			<link code="33" indx="33" name="VIA FILIPPO FIORENTINI" idno="55525854" fnod="49941" kind="driv" inst="2012-09-24T18:13:26" time="266.825224218622" dist="2903.94355301816" cost="1.48236235677012" voft="0.0741181178385062" vofd="2.90394355301816" lev1="0" lev2="1.11755703735352" lev3="1.27149584579468" lev4="0.243623544216156" lev5="0.242956884645469" tort="2.02631597564323" uslo="2.1000000276627" dslo="1.94374989381732" rtrn="0.838912975188578" ltrn="0.583581669750856" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="2.87687486989597" npav="0" toll="0" cont="1.11800000071526" prio="0.934000005945563">
+				<actn indx="1" xcoo="12.5558996200562" ycoo="41.9089202880859"/>
+				<actn indx="2" xcoo="12.55562" ycoo="41.90943"/>
+			</link>
+			<link code="34" indx="34" name="VIA FILIPPO FIORENTINI" idno="762419299" fnod="80299" kind="driv" inst="2012-09-24T18:13:29" time="269.473651647822" dist="2933.37052445371" cost="1.4970758424879" voft="0.0748537921243949" vofd="2.93337052445371" lev1="0" lev2="1.11755703735352" lev3="1.30092281723022" lev4="0.243623544216156" lev5="0.242956884645469" tort="2.03392070456175" uslo="2.1000000276627" dslo="1.94374989381732" rtrn="0.838912975188578" ltrn="0.591186398669379" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="2.90587486906151" npav="0" toll="0" cont="1.11800000071526" prio="0.963000005111098">
+				<actn indx="1" xcoo="12.5556201934814" ycoo="41.9094314575195"/>
+				<actn indx="2" xcoo="12.55547" ycoo="41.90967"/>
+			</link>
+			<link code="35" indx="35" name="VIA FILIPPO FIORENTINI" idno="762419300" fnod="9025" kind="driv" inst="2012-09-24T18:13:45" time="285.148663091913" dist="3107.53731827695" cost="1.58415923939952" voft="0.079207961969976" vofd="3.10753731827695" lev1="0" lev2="1.11755703735352" lev3="1.47508961105347" lev4="0.243623544216156" lev5="0.242956884645469" tort="2.04383384186076" uslo="2.1000000276627" dslo="1.94374989381732" rtrn="0.838912975188578" ltrn="0.599424193642335" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="3.07987486405472" npav="0" toll="0" cont="1.11800000071526" prio="1.13700000010431">
+				<actn indx="1" xcoo="12.5554704666138" ycoo="41.9096717834473"/>
+				<actn indx="2" xcoo="12.55506012" ycoo="41.9102500011324"/>
+				<actn indx="3" xcoo="12.5545" ycoo="41.91106"/>
+			</link>
+			<link code="36" indx="36" name="VIA FILIPPO FIORENTINI" idno="55539752" fnod="53332" kind="driv" inst="2012-09-24T18:13:47" time="287.372538290278" dist="3132.24704270322" cost="1.59651410161265" voft="0.0798257050806327" vofd="3.13224704270322" lev1="0" lev2="1.11755703735352" lev3="1.49979933547974" lev4="0.243623544216156" lev5="0.242956884645469" tort="2.04741714178817" uslo="2.1000000276627" dslo="1.94374989381732" rtrn="0.842496275115991" ltrn="0.599424193642335" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="3.10487486442725" npav="0" toll="0" cont="1.11800000071526" prio="1.16200000047684">
+				<actn indx="1" xcoo="12.5544996261597" ycoo="41.911060333252"/>
+				<actn indx="2" xcoo="12.55437" ycoo="41.91126" actc="TurnSightlyRight" addr="" kind="Svolta leggermente a destra sulla rampa"/>
+			</link>
+			<link code="37" indx="37" name="" idno="55525212" fnod="56692" kind="driv" inst="2012-09-24T18:14:34" time="334.820301863954" dist="3256.4930220123" cost="1.86011278813308" voft="0.0930056394066539" vofd="3.2564930220123" lev1="0" lev2="1.11755703735352" lev3="1.62404531478882" lev4="0.243623544216156" lev5="0.242956884645469" tort="2.34457397117512" uslo="2.1000000276627" dslo="2.1437498864504" rtrn="0.899355488974834" ltrn="0.599424193642335" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="3.22887486240069" npav="0" toll="0" cont="1.11800000071526" prio="1.16200000047684">
+				<actn indx="1" xcoo="12.5543699264526" ycoo="41.9112586975098"/>
+				<actn indx="2" xcoo="12.55434012" ycoo="41.911490021133"/>
+				<actn indx="3" xcoo="12.55429008" ycoo="41.911600001133"/>
+				<actn indx="4" xcoo="12.5541" ycoo="41.9119300311332"/>
+				<actn indx="5" xcoo="12.55407984" ycoo="41.9119900611332"/>
+				<actn indx="6" xcoo="12.55407012" ycoo="41.9120600811332"/>
+				<actn indx="7" xcoo="12.55408992" ycoo="41.9121200211333"/>
+				<actn indx="8" xcoo="12.55412988" ycoo="41.9121700611333"/>
+				<actn indx="9" xcoo="12.55417992" ycoo="41.9122100211333"/>
+				<actn indx="10" xcoo="12.55427" ycoo="41.91229" actc="TurnSightlyRight" addr="VIA TIBURTINA" kind="Svolta leggermente a destra e imbocca {street}"/>
+			</link>
+			<link code="38" indx="38" name="VIA TIBURTINA" idno="71138022" fnod="73516" kind="driv" inst="2012-09-24T18:14:41" time="341.354831130311" dist="3329.09890274961" cost="1.89641572850173" voft="0.0948207864250865" vofd="3.32909890274961" lev1="0" lev2="1.11755703735352" lev3="1.69665119552612" lev4="0.243623544216156" lev5="0.242956884645469" tort="2.44123087479966" uslo="2.1000000276627" dslo="2.24374988983714" rtrn="0.966107721586013" ltrn="0.599424193642335" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="3.3018748613278" npav="0" toll="0" cont="1.11800000071526" prio="1.23499999940395">
+				<actn indx="1" xcoo="12.5542697906494" ycoo="41.9122886657715"/>
+				<actn indx="2" xcoo="12.55447008" ycoo="41.9123600511334"/>
+				<actn indx="3" xcoo="12.55474008" ycoo="41.9124600411334"/>
+				<actn indx="4" xcoo="12.55491" ycoo="41.9125300611335"/>
+				<actn indx="5" xcoo="12.55504" ycoo="41.9126"/>
+			</link>
+			<link code="39" indx="39" name="VIA TIBURTINA" idno="55524833" fnod="83638" kind="driv" inst="2012-09-24T18:14:59" time="359.43038445215" dist="3373.68838410337" cost="1.99683546917861" voft="0.0998417734589305" vofd="3.37368838410337" lev1="0" lev2="1.11755703735352" lev3="1.74124067687988" lev4="0.243623544216156" lev5="0.242956884645469" tort="2.46903419709997" uslo="2.1000000276627" dslo="2.24374988983714" rtrn="0.966107721586013" ltrn="0.617146880395012" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="3.34687486311594" npav="0" toll="0" cont="1.11800000071526" prio="1.28000000119209">
+				<actn indx="1" xcoo="12.5550403594971" ycoo="41.9126014709473"/>
+				<actn indx="2" xcoo="12.55514004" ycoo="41.9126700111335"/>
+				<actn indx="3" xcoo="12.55534992" ycoo="41.9128000611336"/>
+				<actn indx="4" xcoo="12.55545" ycoo="41.91286"/>
+			</link>
+			<link code="40" indx="40" name="VIA TIBURTINA" idno="55524790" fnod="97077" kind="driv" inst="2012-09-24T18:15:16" time="376.595561187074" dist="3408.16257004697" cost="2.09219756215041" voft="0.104609878107521" vofd="3.40816257004697" lev1="0" lev2="1.11755703735352" lev3="1.77571486282349" lev4="0.243623544216156" lev5="0.242956884645469" tort="2.54885719745653" uslo="2.1000000276627" dslo="2.24374988983714" rtrn="0.981271908764029" ltrn="0.617146880395012" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="3.38087486496369" npav="0" toll="0" cont="1.11800000071526" prio="1.31400000303984">
+				<actn indx="1" xcoo="12.5554504394531" ycoo="41.9128608703613"/>
+				<actn indx="2" xcoo="12.55559004" ycoo="41.9129300211336"/>
+				<actn indx="3" xcoo="12.55569984" ycoo="41.9129900511337"/>
+				<actn indx="4" xcoo="12.55576" ycoo="41.91306" actc="TurnSightlyLeft" addr="VIA DI PIETRALATA" kind="Svolta leggermente a sinistra e imbocca {street}"/>
+			</link>
+			<link code="41" indx="41" name="VIA DI PIETRALATA" idno="808308949" fnod="97078" kind="driv" inst="2012-09-24T18:15:22" time="382.797894446657" dist="3449.51145844419" cost="2.12665496914809" voft="0.106332748457405" vofd="3.44951145844419" lev1="0" lev2="1.11755703735352" lev3="1.77571486282349" lev4="0.284972432613373" lev5="0.242956884645469" tort="2.624906629615" uslo="2.1000000276627" dslo="2.24374988983714" rtrn="0.981271908764029" ltrn="0.693196312553482" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="3.42187486609618" npav="0" toll="0" cont="1.11800000071526" prio="1.31400000303984">
+				<actn indx="1" xcoo="12.555760383606" ycoo="41.9130592346191"/>
+				<actn indx="2" xcoo="12.55581" ycoo="41.91343"/>
+			</link>
+			<link code="42" indx="42" name="VIA DI PIETRALATA" idno="808308950" fnod="12167" kind="driv" inst="2012-09-24T18:15:41" time="401.186741797731" dist="3572.10377411802" cost="2.22881523220962" voft="0.111440761610481" vofd="3.57210377411802" lev1="0" lev2="1.11755703735352" lev3="1.77571486282349" lev4="0.407564748287201" lev5="0.242956884645469" tort="2.65146842628019" uslo="2.1000000276627" dslo="2.24374988983714" rtrn="0.981271908764029" ltrn="0.719758109218674" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="3.54487486949364" npav="0" toll="0" cont="1.11800000071526" prio="1.31400000303984">
+				<actn indx="1" xcoo="12.5558099746704" ycoo="41.9134292602539"/>
+				<actn indx="2" xcoo="12.55571" ycoo="41.91453"/>
+			</link>
+			<link code="43" indx="43" name="VIA DI PIETRALATA" idno="55540942" fnod="60024" kind="driv" inst="2012-09-24T18:15:45" time="405.364123408601" dist="3599.95298485715" cost="2.25202290782556" voft="0.112601145391278" vofd="3.59995298485715" lev1="0" lev2="1.11755703735352" lev3="1.77571486282349" lev4="0.435413959026337" lev5="0.242956884645469" tort="2.6526551724528" uslo="2.1000000276627" dslo="2.24374988983714" rtrn="0.982458654936636" ltrn="0.719758109218674" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="3.57287487035791" npav="0" toll="0" cont="1.11800000071526" prio="1.31400000303984">
+				<actn indx="1" xcoo="12.5557098388672" ycoo="41.9145317077637"/>
+				<actn indx="2" xcoo="12.55569" ycoo="41.91478"/>
+			</link>
+			<link code="44" indx="44" name="VIA DI PIETRALATA" idno="55540944" fnod="26373" kind="driv" inst="2012-09-24T18:15:47" time="407.701735083864" dist="3615.53706269224" cost="2.2650096393548" voft="0.11325048196774" vofd="3.61553706269224" lev1="0" lev2="1.11755703735352" lev3="1.77571486282349" lev4="0.45099803686142" lev5="0.242956884645469" tort="2.65421393030556" uslo="2.1000000276627" dslo="2.24374988983714" rtrn="0.984017412789399" ltrn="0.719758109218674" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="3.58887487111787" npav="0" toll="0" cont="1.11800000071526" prio="1.31400000303984">
+				<actn indx="1" xcoo="12.5556898117065" ycoo="41.9147796630859"/>
+				<actn indx="2" xcoo="12.55568" ycoo="41.91492"/>
+			</link>
+			<link code="45" indx="45" name="VIA DI PIETRALATA" idno="55540945" fnod="120486" kind="driv" inst="2012-09-24T18:15:52" time="412.378457610414" dist="3646.71521286924" cost="2.29099143116897" voft="0.114549571558448" vofd="3.64671521286924" lev1="0" lev2="1.11755703735352" lev3="1.77571486282349" lev4="0.482176187038422" lev5="0.242956884645469" tort="2.65472775872331" uslo="2.1000000276627" dslo="2.24374988983714" rtrn="0.984017412789399" ltrn="0.720271937636426" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="3.61987487061123" npav="0" toll="0" cont="1.11800000071526" prio="1.31400000303984">
+				<actn indx="1" xcoo="12.5556802749634" ycoo="41.9149208068848"/>
+				<actn indx="2" xcoo="12.55566" ycoo="41.9152"/>
+			</link>
+			<link code="46" indx="46" name="VIA DI PIETRALATA" idno="55524264" fnod="100434" kind="driv" inst="2012-09-24T18:15:55" time="415.736019961641" dist="3669.09896187742" cost="2.30964455534245" voft="0.115482227767122" vofd="3.66909896187742" lev1="0" lev2="1.11755703735352" lev3="1.77571486282349" lev4="0.5045599360466" lev5="0.242956884645469" tort="2.66402047208976" uslo="2.1000000276627" dslo="2.24374988983714" rtrn="0.984017412789399" ltrn="0.729564651002875" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="3.64187487049202" npav="0" toll="0" cont="1.11800000071526" prio="1.31400000303984">
+				<actn indx="1" xcoo="12.5556602478027" ycoo="41.9151992797852"/>
+				<actn indx="2" xcoo="12.55563" ycoo="41.9154"/>
+			</link>
+			<link code="47" indx="47" name="VIA DI PIETRALATA" idno="55524219" fnod="63421" kind="driv" inst="2012-09-24T18:16:13" time="433.029153888032" dist="3784.38652138669" cost="2.40571752160018" voft="0.120285876080009" vofd="3.78438652138669" lev1="0" lev2="1.11755703735352" lev3="1.77571486282349" lev4="0.619847495555878" lev5="0.242956884645469" tort="2.66445146972546" uslo="2.1000000276627" dslo="2.34374989182323" rtrn="0.984017412789399" ltrn="0.729995648638578" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="3.75687487257818" npav="0" toll="0" cont="1.11800000071526" prio="1.31400000303984">
+				<actn indx="1" xcoo="12.5556297302246" ycoo="41.9154014587402"/>
+				<actn indx="2" xcoo="12.55547" ycoo="41.91643" actc="TurnLeft" addr="VIA DELLA DEA OPI" kind="Svolta a sinistra e imbocca {street}"/>
+			</link>
+			<link code="48" indx="48" name="VIA DELLA DEA OPI" idno="55539713" fnod="90373" kind="driv" inst="2012-09-24T18:16:56" time="476.267065875337" dist="4072.63926796873" cost="2.64592814375187" voft="0.132296407187594" vofd="4.07263926796873" lev1="0" lev2="1.11755703735352" lev3="1.77571486282349" lev4="0.619847495555878" lev5="0.5312096312275" tort="3.12423295254121" uslo="2.40000004351247" dslo="2.34374989182323" rtrn="0.984017412789399" ltrn="0.994036565796705" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="4.04487486018041" npav="0" toll="0" cont="1.11800000071526" prio="1.31400000303984">
+				<actn indx="1" xcoo="12.5554704666138" ycoo="41.916431427002"/>
+				<actn indx="2" xcoo="12.55520016" ycoo="41.9163900711353"/>
+				<actn indx="3" xcoo="12.55439988" ycoo="41.9161900011352"/>
+				<actn indx="4" xcoo="12.55394016" ycoo="41.9159100111351"/>
+				<actn indx="5" xcoo="12.55356" ycoo="41.9154500211348"/>
+				<actn indx="6" xcoo="12.55345992" ycoo="41.9151800211347"/>
+				<actn indx="7" xcoo="12.55340988" ycoo="41.9150100111346"/>
+				<actn indx="8" xcoo="12.55335" ycoo="41.91469" kind="Arrivo sulla {dir}" dir="sinistra" actc="TurnLeft"/>
+			</link>
+			<link code="49" indx="49" kind="driv" inst="2012-09-24T18:16:58" time="478.488303078055" dist="4091.14957799138" cost="2.65826835043364" voft="0.132913417521682" vofd="4.09114957799138" lev1="0" lev2="1.11755703735352" lev3="1.77571486282349" lev4="0.619847495555878" lev5="0.5312096312275" tort="3.12423295254121" uslo="2.40000004351247" dslo="2.34374989182323" rtrn="0.984017412789399" ltrn="0.994036565796705" tlzr="0" disa="0" daut="0" dtru="0" deli="0" dmot="0" nthr="0" tunn="0" brdg="0" urbn="4.04487486018041" npav="0" toll="0" cont="1.11800000071526" prio="1.31400000303984">
+				<actn indx="1" xcoo="12.55357" ycoo="41.91466" kind="Arrivo" actc="Arrival"/>
+			</link>
+			<dest xcoo="12.55357" ycoo="41.91466" inst="2012-09-24T18:16:58" addr="12.55357, 41.91466" prog="0"/>
+		</path>
+	</rsol>
+</response>
