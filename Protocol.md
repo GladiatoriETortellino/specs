@@ -1,6 +1,17 @@
 Paths:
 =====
 
+Risorsa: percorso
+-----------------
+
+/paths/<phoneNumber>
+sempre vuota, se e' cambiata
+
+response
+{
+	("pathResponse":"<link-routing-XML>")
+}
+
 Risorsa: offer
 --------------
 
@@ -31,7 +42,7 @@ response
 {
 	"idOffer":"<id-DB>",
 	"idUtente":"<cell-number>",
-	"pathResponse":"<link-routing>"
+	"pathResponse":"<link-routing-XML>"
 }
 
 Note:
@@ -73,7 +84,7 @@ Note:
 
 take offer
 POST 
-/offers/<id-offer>/join
+/offers/<phoneNumber>/join
 
 Note:
 - cristallizza l'offerta
